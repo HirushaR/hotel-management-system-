@@ -17,7 +17,8 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+       public static string unm;
+       
         private void Label1_Click(object sender, EventArgs e)
         {
 
@@ -25,7 +26,7 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string unm, psw;
+            string psw;
             unm = textBox1.Text;
             psw = textBox2.Text;
 

@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
         public static SqlConnection GetConnection()
         {
             // this is database class
-            string conn =@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\hiru\works\C#\HMS\hotel.mdf;Integrated Security=True;Connect Timeout=30";
+            string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\hiru\works\C#\hotel-management-system-\hotel.mdf;Integrated Security=True;Connect Timeout=30";
             SqlConnection mycon = new SqlConnection(conn);
             return mycon;
         }

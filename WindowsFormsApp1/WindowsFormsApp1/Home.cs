@@ -28,5 +28,15 @@ namespace WindowsFormsApp1
         {
             roomRecervation1.BringToFront();
         }
+
+        private void RoomRecervation1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

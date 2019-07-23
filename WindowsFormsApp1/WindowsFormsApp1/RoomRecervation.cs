@@ -26,7 +26,9 @@ namespace WindowsFormsApp1
 
         private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            recevertion_guest rg = new recevertion_guest();
+            rg.Show();
+            this.Hide();
         }
     }
 }
