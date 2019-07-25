@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -42,7 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,8 +51,8 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rgMale = new System.Windows.Forms.RadioButton();
+            this.rgFemale = new System.Windows.Forms.RadioButton();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
@@ -68,6 +66,8 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -78,13 +78,6 @@
             this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Guest No";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(133, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
             // 
             // label2
             // 
@@ -182,13 +175,6 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Country";
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(133, 286);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(288, 22);
-            this.textBox8.TabIndex = 15;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -274,27 +260,27 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "sex";
             // 
-            // radioButton1
+            // rgMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(689, 48);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 21);
-            this.radioButton1.TabIndex = 25;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rgMale.AutoSize = true;
+            this.rgMale.Location = new System.Drawing.Point(689, 48);
+            this.rgMale.Name = "rgMale";
+            this.rgMale.Size = new System.Drawing.Size(59, 21);
+            this.rgMale.TabIndex = 25;
+            this.rgMale.TabStop = true;
+            this.rgMale.Text = "Male";
+            this.rgMale.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rgFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(764, 48);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 21);
-            this.radioButton2.TabIndex = 26;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "FeMale";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rgFemale.AutoSize = true;
+            this.rgFemale.Location = new System.Drawing.Point(764, 48);
+            this.rgFemale.Name = "rgFemale";
+            this.rgFemale.Size = new System.Drawing.Size(75, 21);
+            this.rgFemale.TabIndex = 26;
+            this.rgFemale.TabStop = true;
+            this.rgFemale.Text = "FeMale";
+            this.rgFemale.UseVisualStyleBackColor = true;
             // 
             // textBox13
             // 
@@ -402,11 +388,28 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(133, 286);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(288, 22);
+            this.dateTimePicker1.TabIndex = 40;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(130, 9);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(0, 17);
+            this.label20.TabIndex = 41;
+            // 
             // recevertion_guest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 550);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.label19);
@@ -420,8 +423,8 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rgFemale);
+            this.Controls.Add(this.rgMale);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.label12);
@@ -431,7 +434,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label7);
@@ -445,7 +447,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "recevertion_guest";
             this.Text = "recevertion_guest";
@@ -457,7 +458,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -470,7 +470,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label9;
@@ -481,8 +480,8 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rgMale;
+        private System.Windows.Forms.RadioButton rgFemale;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox14;
@@ -496,5 +495,7 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label20;
     }
 }
